@@ -7,10 +7,6 @@ $(document).ready(function() {
   $(".category-div").hide();
 
 
-  //afficher les categories en tab
-  $(".category-item").addClass('list-group-item')
-
-
   $(".category-item").click(function(){
     //pour surligner le tab actif (et pas les autres)
     $(".category-item").removeClass('active')
@@ -29,8 +25,7 @@ $(document).ready(function() {
   $(document).click(function(){
     $(".dropdown-contenu").fadeOut(300);
     $(".modale").fadeOut(300);
-
-
+    $("body").removeClass('modalIsOn');
   });
 
   //En cas de clic, je rajoute/enlève la classe show à mon dropdown
@@ -41,15 +36,18 @@ $(document).ready(function() {
 
   //MODALES
   $(".modale-link-login").click(function(e){
+    $("body").addClass('modalIsOn');
     e.stopPropagation(); //pour ne pas être affecté par la fonction précédente
     $(".modale").fadeOut(300);
-    $(".modale-login").fadeToggle(300);
+    $(".modale-login").fadeIn(300);
   })
 
   $(".modale-link-signup").click(function(e){
+    $("body").addClass('modalIsOn');
     e.stopPropagation(); //pour ne pas être affecté par la fonction précédente
     $(".modale").fadeOut(300);
-    $(".modale-signup").fadeToggle(300);
+    $(".modale-signup").fadeIn(300);
+
   })
 
 

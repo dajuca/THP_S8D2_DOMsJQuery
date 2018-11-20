@@ -9,8 +9,15 @@
     border-radius: 12px;
     box-shadow: 0px 8px 30px 0px rgba(0,0,0,0.2);
     display: none;
+    z-index: 2;
+}
+
+.modalIsOn #page-wrap{
+  -webkit-filter: blur(5px) grayscale(50%);
 
 }
 
-.show{ display:block;}
+.modalIsOn #all-modals {
+  opacity: 1;
 
+}

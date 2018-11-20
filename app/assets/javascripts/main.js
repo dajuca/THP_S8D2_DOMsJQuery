@@ -21,7 +21,7 @@ $(document).ready(function() {
 
 
   //DROP-DOWN MENU
-  //En cas de clic, je rajoute la classe show à mon dropdown
+  //En cas de clic n'importe où sur le document, j'efface mon dropdown menu et mes modales
   $(document).click(function(){
     $(".dropdown-contenu").fadeOut(300);
     $(".modale").fadeOut(300);
@@ -30,24 +30,27 @@ $(document).ready(function() {
 
   //En cas de clic, je rajoute/enlève la classe show à mon dropdown
   $(".avatar").click(function(e){
-    e.stopPropagation(); //pour ne pas être affecté par la fonction précédente
+    e.stopPropagation(); //pour ne pas être affecté par la fonction "clic n'importe où sur le document"
     $(".dropdown-contenu").fadeToggle(300);    
   });
 
   //MODALES
   $(".modale-link-login").click(function(e){
     $("body").addClass('modalIsOn');
-    e.stopPropagation(); //pour ne pas être affecté par la fonction précédente
+    e.stopPropagation(); //pour ne pas être affecté par la fonction "clic n'importe où sur le document"
     $(".modale").fadeOut(300);
     $(".modale-login").fadeIn(300);
   })
 
   $(".modale-link-signup").click(function(e){
     $("body").addClass('modalIsOn');
-    e.stopPropagation(); //pour ne pas être affecté par la fonction précédente
+    e.stopPropagation(); //pour ne pas être affecté par la fonction "clic n'importe où sur le document"
     $(".modale").fadeOut(300);
     $(".modale-signup").fadeIn(300);
+  })
 
+  $(".modale").click(function(e){
+    e.stopPropagation(); //pour ne pas être affecté par la fonction "clic n'importe où sur le document"
   })
 
   

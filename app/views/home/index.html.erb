@@ -1,4 +1,4 @@
-<div id="page-wrap">
+
   <h1 class="text-center mb-4">Welcome to my todolist app</h1>
   <%= render 'layouts/task_form'  %>
   <div class="container">
@@ -23,16 +23,21 @@
     </ul>
   </div>
 
+
+
   <div class="container">
     <div class="row">
+      <div id="carrousel">
+         <img src="../../assets/images/forward.svg" alt="arrow" height="42" width="42" id="arrow"> 
       <% @tasks.each do |task|  %>
-        <div class="card col-3">
+        <div class="card col-12">
           <% unless task.image.nil? %>
             <%= image_tag task.image, class: "rounded-circle" %>
           <% end %>
         </div>
       <% end %>
+      </div>
     </div>
   </div>
-</div>
+
 

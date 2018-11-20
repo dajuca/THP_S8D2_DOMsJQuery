@@ -12,3 +12,5 @@ Projet réalisé par @vano et @Clem B from Montpellier
 *6* `rails server`  
 *7* `lancer localhost dans votre navigateur`  
 
+lien heroku: https://jquerywebsite.herokuapp.com/
+

@@ -27,15 +27,30 @@ $(document).ready(function() {
   //DROP-DOWN MENU
   //En cas de clic, je rajoute la classe show à mon dropdown
   $(document).click(function(){
-    $(".dropdown-contenu").removeClass('show');    
+    $(".dropdown-contenu").fadeOut(300);
+    $(".modale").fadeOut(300);
+
+
   });
 
   //En cas de clic, je rajoute/enlève la classe show à mon dropdown
   $(".avatar").click(function(e){
     e.stopPropagation(); //pour ne pas être affecté par la fonction précédente
-    $(".dropdown-contenu").toggleClass('show');    
+    $(".dropdown-contenu").fadeToggle(300);    
   });
 
+  //MODALES
+  $(".modale-link-login").click(function(e){
+    e.stopPropagation(); //pour ne pas être affecté par la fonction précédente
+    $(".modale").fadeOut(300);
+    $(".modale-login").fadeToggle(300);
+  })
+
+  $(".modale-link-signup").click(function(e){
+    e.stopPropagation(); //pour ne pas être affecté par la fonction précédente
+    $(".modale").fadeOut(300);
+    $(".modale-signup").fadeToggle(300);
+  })
 
 
 });

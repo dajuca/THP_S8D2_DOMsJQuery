@@ -1,7 +1,6 @@
 # Jquery_project  THP - Semaine 8, mardi  
 Projet réalisé par @vano et @Clem B from Montpellier
-
- sur la base du repo suivant https://github.com/mathieubrunpicard/todolist-app
+sur la base du repo suivant https://github.com/mathieubrunpicard/todolist-app
   
 ## Ce travail est à consulter en Localhost en suivant ce process :  
 *1* `cloner ce repo`  
@@ -13,5 +12,5 @@ Projet réalisé par @vano et @Clem B from Montpellier
 *7* `lancer localhost dans votre navigateur`  
 
 ## lien heroku: 
-https://jquerywebsite.herokuapp.com/
+https://thp-jquerywebsite.herokuapp.com/
 

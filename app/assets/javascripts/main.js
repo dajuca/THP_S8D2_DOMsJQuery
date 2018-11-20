@@ -35,6 +35,8 @@ $(document).ready(function() {
   });
 
   //MODALES
+
+  //fait apparaitre la modale de login
   $(".modale-link-login").click(function(e){
     $("body").addClass('modalIsOn');
     e.stopPropagation(); //pour ne pas être affecté par la fonction "clic n'importe où sur le document"
@@ -42,6 +44,7 @@ $(document).ready(function() {
     $(".modale-login").fadeIn(300);
   })
 
+  //fait apparaitre la modale de signup
   $(".modale-link-signup").click(function(e){
     $("body").addClass('modalIsOn');
     e.stopPropagation(); //pour ne pas être affecté par la fonction "clic n'importe où sur le document"
@@ -49,6 +52,7 @@ $(document).ready(function() {
     $(".modale-signup").fadeIn(300);
   })
 
+  //empêche les modales de disparaitre si on clique dessus
   $(".modale").click(function(e){
     e.stopPropagation(); //pour ne pas être affecté par la fonction "clic n'importe où sur le document"
   })

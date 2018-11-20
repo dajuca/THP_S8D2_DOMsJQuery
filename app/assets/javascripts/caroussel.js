@@ -1,6 +1,5 @@
 $(document).ready(function(){
 
-
 var $carrousel = $('#carrousel'), // on cible le bloc du carrousel
     $img = $('#carrousel img'), // on cible les images contenues dans le carrousel
     indexImg = $img.length - 1, // on définit l'index du dernier élément
@@ -9,10 +8,11 @@ var $carrousel = $('#carrousel'), // on cible le bloc du carrousel
 
 
 $img.css('display', 'none'); // on cache les images
-currentImg.css('display', 'block'); // on affiche seulement l'image courante
+$currentImg.css('display', 'block'); // on affiche seulement l'image courante
+$carrousel.append('<div class="controls"> <span class="prev btn btn-start-order">Precedent</span> <span class="next btn btn-start-order">Suivant</span> </div>');
+
 
 $('.next').click(function(){ // image suivante
-
     i++; // on incrémente le compteur
     if( i <= indexImg ){
         $img.css('display', 'none'); // on cache les images
@@ -22,8 +22,8 @@ $('.next').click(function(){ // image suivante
     else{
         i = indexImg;
     }
-});
 
+});
 
 $('.prev').click(function(){ // image précédente
     i--; // on décrémente le compteur, puis on réalise la même chose que pour la fonction "suivante"
@@ -35,7 +35,6 @@ $('.prev').click(function(){ // image précédente
     else{
         i = 0;
     }
-
 });
 
 
@@ -55,5 +54,4 @@ function slideImg(){
 
 }
 slideImg(); // enfin, on lance la fonction une première fois
-
 });

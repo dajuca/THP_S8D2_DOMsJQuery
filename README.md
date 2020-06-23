@@ -1,5 +1,5 @@
 # Jquery_project  THP - Semaine 8, mardi  
-Projet réalisé par @vano et @Clem B from Montpellier
+Projet réalisé par @vano et @dajuca
 sur la base du repo suivant https://github.com/mathieubrunpicard/todolist-app
   
 ## Ce travail est à consulter en Localhost en suivant ce process :  
